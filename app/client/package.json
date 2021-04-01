@@ -23,7 +23,7 @@
     "@ngrx/router-store": "^11.0.1",
     "@ngrx/store": "^11.0.1",
     "@ngrx/store-devtools": "^11.0.1",
-    "query-string": "^6.14.0",
+    "query-string": "^7.0.0",
     "rxjs": "~6.6.3",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
