@@ -19,6 +19,10 @@ http://angular.realworld.io/
 
 <br/>
 
+**[BackEnd на NesJS для этого проекта](https://github.com/webmakaka/NestJS-Building-Real-Project-API-From-Scratch)**
+
+<br/>
+
 ---
 
 <br/>
