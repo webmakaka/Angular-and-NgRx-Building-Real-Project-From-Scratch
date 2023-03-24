@@ -1,7 +1,5 @@
 # [Udemy, Oleksandr Kocherhin] Angular и NgRx - пишем реальный проект с нуля [RUS, 2020]
 
-
-
 <br/>
 
 ```
@@ -22,6 +20,8 @@ $ npm -v
 $ npm install -g @angular/cli
 ```
 
+<br/>
+
 ```
 $ ng version
 
@@ -31,15 +31,15 @@ $ ng version
   / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
  /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                 |___/
-    
+
 
 Angular CLI: 15.2.4
 Node: 18.15.0
 Package Manager: npm 9.6.2
 OS: linux x64
 
-Angular: 
-... 
+Angular:
+...
 
 Package                      Version
 ------------------------------------------------------
@@ -49,6 +49,9 @@ Package                      Version
 @schematics/angular          15.2.4 (cli-only)
 ```
 
+<br/>
+
+### [01 Подготовка проекта](./docs/Chapter01.md)
 
 <br/>
 
