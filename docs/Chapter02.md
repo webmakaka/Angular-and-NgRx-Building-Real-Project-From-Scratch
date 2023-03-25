@@ -62,6 +62,14 @@ $ ng add @ngrx/store-devtools --skip-confirmation
 
 <br/>
 
+### 011 Добавляем редьюсеры для модуля авторизации
+
+<br/>
+
+![Application](/img/pic-m02-p04.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
