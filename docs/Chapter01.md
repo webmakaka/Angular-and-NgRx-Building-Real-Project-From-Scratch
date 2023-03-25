@@ -36,7 +36,7 @@ http://localhost:4200/
 
 <br/>
 
-### 002 Почему нам нужен NgRx?
+### 002 Почему нам нужен NgRx? (Wrapper над Redux для Angular)
 
 <br/>
 

@@ -26,6 +26,16 @@ http://localhost:4200/register
 
 <br/>
 
+### 008 Устанавливаем NgRx
+
+https://ngrx.io/
+
+```
+$ ng add @ngrx/store
+```
+
+<br/>
+
 ---
 
 <br/>

@@ -1,4 +1,4 @@
-# [Udemy, Oleksandr Kocherhin] Angular и NgRx - пишем реальный проект с нуля [RUS, 2020]
+# [Oleksandr Kocherhin] Angular и NgRx - пишем реальный проект с нуля [RUS, 2020]
 
 <br/>
 
