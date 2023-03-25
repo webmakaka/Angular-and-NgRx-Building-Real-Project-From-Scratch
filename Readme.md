@@ -53,6 +53,8 @@ Package                      Version
 
 ### [01 Подготовка проекта](./docs/Chapter01.md)
 
+### [02 Модуль регистрации](./docs/Chapter02.md)
+
 <br/>
 
 ---

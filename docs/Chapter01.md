@@ -28,11 +28,27 @@ $ npm start
 
 <br/>
 
+http://localhost:4200/
+
+<br/>
+
 ![Application](/img/pic-m01-p01.png?raw=true)
 
 <br/>
 
-http://localhost:4200/
+### 002 Почему нам нужен NgRx?
+
+<br/>
+
+### 003 Планируем структуру проекта
+
+<br/>
+
+### 004 Prettier - инструмент автоформатирования кода
+
+<br/>
+
+### 005 Зачем нам language server?
 
 <br/>
 
