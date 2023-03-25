@@ -56,6 +56,12 @@ Package                      Version
 ### [02 Модуль регистрации](./docs/Chapter02.md)
 
 <br/>
+<hr/>
+<br/>
+
+### [BackEnd на NesJS для этого проекта](https://github.com/webmakaka/NestJS-Building-Real-Project-API-From-Scratch)
+
+<br/>
 
 ---
 

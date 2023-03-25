@@ -8,8 +8,6 @@
 
 ### 006 Модуль регистрации
 
-https://angular.realworld.io/
-
 <br/>
 
 http://localhost:4200/register
@@ -17,6 +15,14 @@ http://localhost:4200/register
 <br/>
 
 ![Application](/img/pic-m02-p01.png?raw=true)
+
+<br/>
+
+### 007 Делаем разметку регистрации
+
+<br/>
+
+![Application](/img/pic-m02-p02.png?raw=true)
 
 <br/>
 
