@@ -2,6 +2,11 @@
 
 <br/>
 
+[Разрабатываемое приложение](//angular.realworld.io/)
+[Ожидаемый финальный проект](//angular.realworld.io/)
+
+<br/>
+
 ```
 $ node -v
 v18.15.0

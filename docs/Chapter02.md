@@ -58,6 +58,10 @@ $ ng add @ngrx/store-devtools --skip-confirmation
 
 <br/>
 
+### 010 Создаем интерфейсы для модуля авторизации
+
+<br/>
+
 ---
 
 <br/>
