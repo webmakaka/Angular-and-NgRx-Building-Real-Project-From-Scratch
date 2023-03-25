@@ -33,11 +33,16 @@
                 formControlName="password"
               />
             </fieldset>
-            <button class="btn btn-lg btn-primary pull-xs-right" type="submit">
+            <button
+              class="btn btn-lg btn-primary pull-xs-right"
+              type="submit"
+              [disabled]="isSubmitting$ | async"
+            >
               Sign up
             </button>
           </fieldset>
         </form>
+        === isSubmitting: {{ isSubmitting$ | async }} ===
       </div>
     </div>
   </div>

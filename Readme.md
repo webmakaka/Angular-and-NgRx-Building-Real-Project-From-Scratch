@@ -2,7 +2,7 @@
 
 <br/>
 
-[Разрабатываемое приложение](//angular-and-ng-rx-building-real-project-from-scratch.jsdev.org/)
+[Разрабатываемое приложение](//angular-and-ng-rx-building-real-project-from-scratch.jsdev.org/)  
 [Ожидаемый финальный проект](//angular.realworld.io/)
 
 <br/>

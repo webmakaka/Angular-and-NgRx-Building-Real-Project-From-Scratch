@@ -70,6 +70,14 @@ $ ng add @ngrx/store-devtools --skip-confirmation
 
 <br/>
 
+### 012 Создаем селекторы для модуля авторизации
+
+<br/>
+
+![Application](/img/pic-m02-p05.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
