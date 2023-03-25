@@ -31,8 +31,30 @@ http://localhost:4200/register
 https://ngrx.io/
 
 ```
-$ ng add @ngrx/store
+$ ng add @ngrx/store --skip-confirmation
 ```
+
+<br/>
+
+### 009 Как дебажить NgRx?
+
+**Установить**
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+<br/>
+
+https://ngrx.io/guide/store-devtools
+
+<br/>
+
+```
+$ ng add @ngrx/store-devtools --skip-confirmation
+```
+
+<br/>
+
+![Application](/img/pic-m02-p03.png?raw=true)
 
 <br/>
 
