@@ -78,6 +78,14 @@ $ ng add @ngrx/store-devtools --skip-confirmation
 
 <br/>
 
+### 013 Создаем сервис регистрации
+
+<br/>
+
+![Application](/img/pic-m02-p06.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
