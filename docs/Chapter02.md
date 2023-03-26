@@ -108,6 +108,14 @@ $ ng add @ngrx/effects --skip-confirmation
 
 <br/>
 
+### 016 Реализуем модуль для отрисовки ошибок бекенда
+
+<br/>
+
+![Application](/img/pic-m02-p09.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

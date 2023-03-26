@@ -6,7 +6,10 @@
         <p class="text-xs-center">
           <a [routerLink]="['/login']">Have an account?</a>
         </p>
-        Backend errors are here
+        <ng-container *ngIf="backendErrors$ | async as backendErrors">
+          <mc-backend-error-messages [backendErrors]="backendErrors">
+          </mc-backend-error-messages>
+        </ng-container>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <fieldset>
             <fieldset class="form-group">
@@ -42,7 +45,7 @@
             </button>
           </fieldset>
         </form>
-        === isSubmitting: {{ isSubmitting$ | async }} ===
+        <p>=== isSubmitting$: {{ isSubmitting$ | async }} ===</p>
       </div>
     </div>
   </div>
