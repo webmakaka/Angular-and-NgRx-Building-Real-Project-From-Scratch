@@ -86,6 +86,20 @@ $ ng add @ngrx/store-devtools --skip-confirmation
 
 <br/>
 
+### 014 Добавляем сайд эффекты регистрации
+
+<br/>
+
+```
+$ ng add @ngrx/effects --skip-confirmation
+```
+
+<br/>
+
+![Application](/img/pic-m02-p07.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
