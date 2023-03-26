@@ -100,6 +100,14 @@ $ ng add @ngrx/effects --skip-confirmation
 
 <br/>
 
+### 015 Обновляем редьюсеры авторизации
+
+<br/>
+
+![Application](/img/pic-m02-p08.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
