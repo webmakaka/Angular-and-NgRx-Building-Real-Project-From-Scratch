@@ -7,6 +7,10 @@
 
 <br/>
 
+[Аналогичный проект с версией Angular 11](https://github.com/webmakaka/Angular-and-NgRx-Building-Real-Project-From-Scratch-v1.1)
+
+<br/>
+
 ```
 $ node -v
 v18.15.0

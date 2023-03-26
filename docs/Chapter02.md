@@ -116,6 +116,18 @@ $ ng add @ngrx/effects --skip-confirmation
 
 <br/>
 
+### 017 Создаем persistence сервис
+
+<br/>
+
+![Application](/img/pic-m02-p10.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-m02-p11.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
