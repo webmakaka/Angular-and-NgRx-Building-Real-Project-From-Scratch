@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { LoginComponent } from 'src/app/auth/components/login/login.component';
 import { RegisterComponent } from 'src/app/auth/components/register/register.component';
 import { AuthService } from 'src/app/auth/services/auth.service';
 import { LoginEffect } from 'src/app/auth/store/effects/login.effect';
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent,
   },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
 ];
 
 @NgModule({
@@ -28,7 +33,7 @@ const routes: Routes = [
     EffectsModule.forFeature([RegisterEffect, LoginEffect]),
     BackendErrorMessagesModule,
   ],
-  declarations: [RegisterComponent],
+  declarations: [RegisterComponent, LoginComponent],
   providers: [AuthService, PersistanceService],
 })
 export class AuthModule {}
