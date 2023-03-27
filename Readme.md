@@ -64,6 +64,8 @@ Package                      Version
 
 ### [02 Модуль регистрации](./docs/Chapter02.md)
 
+### [03 Модуль логина](./docs/Chapter03.md)
+
 <br/>
 <hr/>
 <br/>
