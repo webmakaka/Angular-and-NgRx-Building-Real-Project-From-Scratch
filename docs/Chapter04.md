@@ -18,6 +18,14 @@
 
 <br/>
 
+### 025 Подготавливаем стор для фида
+
+<br/>
+
+![Application](/img/pic-m04-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
