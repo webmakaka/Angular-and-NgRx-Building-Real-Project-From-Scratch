@@ -66,6 +66,8 @@ Package                      Version
 
 ### [03 Модуль логина](./docs/Chapter03.md)
 
+### [04 Модуль фида](./docs/Chapter04md)
+
 <br/>
 <hr/>
 <br/>
