@@ -7,7 +7,7 @@ export interface IArticle {
   author: IProfile;
   favorited: boolean;
   favoritesCount: number;
-  slub: string;
+  slug: string;
   tagList: string[];
   createdAt: string;
   updatedAt: string;
