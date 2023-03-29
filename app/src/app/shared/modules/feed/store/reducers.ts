@@ -6,14 +6,14 @@ import {
 } from 'src/app/shared/modules/feed/store/actions/getFeed.action';
 import { IFeedState } from 'src/app/shared/modules/feed/types/feedState.interface';
 
-const initiaState: IFeedState = {
+const initialState: IFeedState = {
   isLoading: false,
   error: null,
   data: null,
 };
 
 const feedReducer = createReducer(
-  initiaState,
+  initialState,
   on(
     getFeedAction,
     (state): IFeedState => ({

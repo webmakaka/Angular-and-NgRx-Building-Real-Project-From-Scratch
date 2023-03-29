@@ -17,15 +17,22 @@ import { IGetFeedResponse } from 'src/app/shared/modules/feed/types/getFeedRespo
   styleUrls: ['./feed.component.scss'],
 })
 export class FeedComponent implements OnInit, OnDestroy {
-  @Input('apiUrl') apiUrlProps: string;
+  @Input('apiUrl') apiUrlProps: string = '';
 
-  isLoading$: Observable<boolean>;
-  error$: Observable<string | null>;
-  feed$: Observable<IGetFeedResponse | null>;
-  limit = constants.limit;
-  baseUrl: string;
-  queryParamsSubscription: Subscription;
-  currentPage: number;
+  limit: number = constants.limit;
+  baseUrl: string = this.router.url.split('?')[0];
+
+  isLoading$: Observable<boolean> = this.store.pipe(select(isLoadingSelector));
+  error$: Observable<string | null> = this.store.pipe(select(errorSelector));
+  feed$: Observable<IGetFeedResponse | null> = this.store.pipe(
+    select(feedSelector)
+  );
+  currentPage: number = 1;
+  queryParamsSubscription: Subscription = this.route.queryParams.subscribe(
+    (params: Params) => {
+      this.currentPage = Number(params['page'] || '1');
+    }
+  );
 
   constructor(
     private store: Store,
@@ -34,31 +41,14 @@ export class FeedComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.initializeValues();
     this.fetchData();
-    this.initializeListeners();
-  }
-
-  ngOnDestroy(): void {
-    this.queryParamsSubscription.unsubscribe();
-  }
-
-  initializeValues(): void {
-    this.isLoading$ = this.store.pipe(select(isLoadingSelector));
-    this.error$ = this.store.pipe(select(errorSelector));
-    this.feed$ = this.store.pipe(select(feedSelector));
-    this.baseUrl = this.router.url.split('?')[0];
-  }
-
-  initializeListeners(): void {
-    this.queryParamsSubscription = this.route.queryParams.subscribe(
-      (params: Params) => {
-        this.currentPage = Number(params['page'] || '1');
-      }
-    );
   }
 
   fetchData(): void {
     this.store.dispatch(getFeedAction({ url: this.apiUrlProps }));
+  }
+
+  ngOnDestroy(): void {
+    this.queryParamsSubscription.unsubscribe();
   }
 }
