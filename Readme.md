@@ -12,6 +12,12 @@
 <br/>
 
 ```
+$ volta install node npm yarn
+```
+
+<br/>
+
+```
 $ node -v
 v18.15.0
 ```
@@ -26,7 +32,14 @@ $ npm -v
 <br/>
 
 ```
-$ npm install -g @angular/cli
+$ yarn -v
+3.5.0
+```
+
+<br/>
+
+```
+$ volta install @angular/cli
 ```
 
 <br/>

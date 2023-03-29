@@ -50,6 +50,26 @@
 
 <br/>
 
+### 030 Перефетчиваем данные фида правильно
+
+<br/>
+
+```
+$ npm install query-string
+```
+
+<br/>
+
+```
+$ ng add @ngrx/router-store --skip-confirmation
+```
+
+<br/>
+
+![Application](/img/pic-m04-p06.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
