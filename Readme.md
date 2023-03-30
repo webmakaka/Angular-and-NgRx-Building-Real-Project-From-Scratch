@@ -81,6 +81,8 @@ Package                      Version
 
 ### [04 Модуль фида](./docs/Chapter04.md)
 
+### [05 Дополнительные модули](./docs/Chapter05.md)
+
 <br/>
 <hr/>
 <br/>
