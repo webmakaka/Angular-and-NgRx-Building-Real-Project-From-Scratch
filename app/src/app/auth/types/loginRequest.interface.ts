@@ -1,4 +1,4 @@
-export interface ILoginRequest {
+export interface LoginRequestInterface {
   user: {
     email: string;
     password: string;

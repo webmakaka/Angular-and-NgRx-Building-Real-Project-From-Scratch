@@ -8,7 +8,7 @@ import {
   getCurrentUserSuccessAction,
 } from 'src/app/auth/store/actions/getCurrentUser.action';
 import { PersistanceService } from 'src/app/shared/services/persistance.service';
-import { ICurrentUser } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
 
 @Injectable()
 export class GetCurrentUserEffect {
@@ -21,7 +21,7 @@ export class GetCurrentUserEffect {
           return of(getCurrentUserFailureAction());
         }
         return this.authService.getCurrentUser().pipe(
-          map((currentUser: ICurrentUser) => {
+          map((currentUser: CurrentUserInterface) => {
             return getCurrentUserSuccessAction({ currentUser });
           }),
           catchError(() => {

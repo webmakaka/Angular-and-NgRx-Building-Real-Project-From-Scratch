@@ -8,8 +8,8 @@ import {
   isSubmittingSelector,
   validationErrorsSelector,
 } from 'src/app/auth/store/selectors';
-import { IRegisterRequest } from 'src/app/auth/types/registerRequest.interface';
-import { IBackendErrors } from 'src/app/shared/types/backendErrors.interface';
+import { RegisterRequestInterface } from 'src/app/auth/types/registerRequest.interface';
+import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
 
 @Component({
   selector: 'mc-register',
@@ -18,7 +18,7 @@ import { IBackendErrors } from 'src/app/shared/types/backendErrors.interface';
 })
 export class RegisterComponent implements OnInit {
   isSubmitting$: Observable<boolean>;
-  backendErrors$: Observable<IBackendErrors | null>;
+  backendErrors$: Observable<BackendErrorsInterface | null>;
   form: FormGroup = this.fb.group({
     username: '',
     email: '',
@@ -37,7 +37,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(): void {
-    const request: IRegisterRequest = {
+    const request: RegisterRequestInterface = {
       user: this.form.value,
     };
     this.store.dispatch(registerAction({ request }));

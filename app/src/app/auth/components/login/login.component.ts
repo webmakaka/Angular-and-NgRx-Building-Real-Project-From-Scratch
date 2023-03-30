@@ -8,8 +8,8 @@ import {
   isSubmittingSelector,
   validationErrorsSelector,
 } from 'src/app/auth/store/selectors';
-import { ILoginRequest } from 'src/app/auth/types/loginRequest.interface';
-import { IBackendErrors } from 'src/app/shared/types/backendErrors.interface';
+import { LoginRequestInterface } from 'src/app/auth/types/loginRequest.interface';
+import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
 
 @Component({
   selector: 'mc-login',
@@ -18,7 +18,7 @@ import { IBackendErrors } from 'src/app/shared/types/backendErrors.interface';
 })
 export class LoginComponent implements OnInit {
   isSubmitting$: Observable<boolean>;
-  backendErrors$: Observable<IBackendErrors | null>;
+  backendErrors$: Observable<BackendErrorsInterface | null>;
   form: FormGroup = this.fb.group({
     email: '',
     password: '',
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(): void {
-    const request: ILoginRequest = {
+    const request: LoginRequestInterface = {
       user: this.form.value,
     };
     this.store.dispatch(loginAction({ request }));

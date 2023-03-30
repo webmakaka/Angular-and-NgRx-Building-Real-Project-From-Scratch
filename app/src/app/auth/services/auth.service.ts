@@ -1,32 +1,36 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { IAuthResponse } from 'src/app/auth/types/authResponse.interface';
-import { ILoginRequest } from 'src/app/auth/types/loginRequest.interface';
-import { IRegisterRequest } from 'src/app/auth/types/registerRequest.interface';
+import { AuthResponseInterface } from 'src/app/auth/types/authResponse.interface';
+import { LoginRequestInterface } from 'src/app/auth/types/loginRequest.interface';
+import { RegisterRequestInterface } from 'src/app/auth/types/registerRequest.interface';
 import { constants } from 'src/app/constants';
-import { ICurrentUser } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
 
 @Injectable()
 export class AuthService {
   constructor(private http: HttpClient) {}
 
-  getUser(response: IAuthResponse): ICurrentUser {
+  getUser(response: AuthResponseInterface): CurrentUserInterface {
     return response.user;
   }
 
-  register(data: IRegisterRequest): Observable<ICurrentUser> {
+  register(data: RegisterRequestInterface): Observable<CurrentUserInterface> {
     const url = constants.apiUrl + '/users';
-    return this.http.post<IAuthResponse>(url, data).pipe(map(this.getUser));
+    return this.http
+      .post<AuthResponseInterface>(url, data)
+      .pipe(map(this.getUser));
   }
 
-  login(data: ILoginRequest): Observable<ICurrentUser> {
+  login(data: LoginRequestInterface): Observable<CurrentUserInterface> {
     const url = constants.apiUrl + '/users/login';
-    return this.http.post<IAuthResponse>(url, data).pipe(map(this.getUser));
+    return this.http
+      .post<AuthResponseInterface>(url, data)
+      .pipe(map(this.getUser));
   }
 
-  getCurrentUser(): Observable<ICurrentUser> {
+  getCurrentUser(): Observable<CurrentUserInterface> {
     const url = constants.apiUrl + '/user';
-    return this.http.get<IAuthResponse>(url).pipe(map(this.getUser));
+    return this.http.get<AuthResponseInterface>(url).pipe(map(this.getUser));
   }
 }

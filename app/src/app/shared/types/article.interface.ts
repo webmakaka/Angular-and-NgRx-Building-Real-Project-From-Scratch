@@ -1,10 +1,10 @@
-import { IProfile } from 'src/app/shared/types/profile.interface';
+import { ProfileInterface } from 'src/app/shared/types/profile.interface';
 
-export interface IArticle {
+export interface ArticleInterface {
   title: string;
   description: string;
   body: string;
-  author: IProfile;
+  author: ProfileInterface;
   favorited: boolean;
   favoritesCount: number;
   slug: string;

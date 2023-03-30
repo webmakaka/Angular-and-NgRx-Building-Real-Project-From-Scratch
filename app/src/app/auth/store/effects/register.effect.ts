@@ -10,7 +10,7 @@ import {
   registerSuccessAction,
 } from 'src/app/auth/store/actions/register.action';
 import { PersistanceService } from 'src/app/shared/services/persistance.service';
-import { ICurrentUser } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
 
 @Injectable()
 export class RegisterEffect {
@@ -19,7 +19,7 @@ export class RegisterEffect {
       ofType(registerAction),
       switchMap(({ request }) => {
         return this.authService.register(request).pipe(
-          map((currentUser: ICurrentUser) => {
+          map((currentUser: CurrentUserInterface) => {
             this.persistanceService.set('accessToken', currentUser.token);
             return registerSuccessAction({ currentUser });
           }),

@@ -10,7 +10,7 @@ import {
   feedSelector,
   isLoadingSelector,
 } from 'src/app/shared/modules/feed/store/selectors';
-import { IGetFeedResponse } from 'src/app/shared/modules/feed/types/getFeedResponse.interface';
+import { GetFeedResponseInterface } from 'src/app/shared/modules/feed/types/getFeedResponse.interface';
 
 @Component({
   selector: 'mc-feed',
@@ -22,7 +22,7 @@ export class FeedComponent implements OnInit, OnDestroy {
 
   isLoading$: Observable<boolean>;
   error$: Observable<string | null>;
-  feed$: Observable<IGetFeedResponse | null>;
+  feed$: Observable<GetFeedResponseInterface | null>;
   limit = constants.limit;
   baseUrl: string;
   queryParamsSubscription: Subscription;

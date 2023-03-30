@@ -6,7 +6,7 @@ import {
   isAnonymousSelector,
   isLoggedInSelector,
 } from 'src/app/auth/store/selectors';
-import { ICurrentUser } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
 
 @Component({
   selector: 'mc-topBar',
@@ -20,7 +20,7 @@ export class TopBarComponent {
   isAnonymous$: Observable<boolean> = this.store.pipe(
     select(isAnonymousSelector)
   );
-  currentUser$: Observable<ICurrentUser | null> = this.store.pipe(
+  currentUser$: Observable<CurrentUserInterface | null> = this.store.pipe(
     select(currentUserSelector)
   );
 

@@ -1,6 +1,6 @@
-import { IArticle } from 'src/app/shared/types/article.interface';
+import { ArticleInterface } from 'src/app/shared/types/article.interface';
 
-export interface IGetFeedResponse {
-  articles: IArticle[];
+export interface GetFeedResponseInterface {
+  articles: ArticleInterface[];
   articlesCount: number;
 }
