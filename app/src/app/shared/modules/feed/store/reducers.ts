@@ -5,9 +5,9 @@ import {
   getFeedFailureAction,
   getFeedSuccessAction,
 } from 'src/app/shared/modules/feed/store/actions/getFeed.action';
-import { IFeedState } from 'src/app/shared/modules/feed/types/feedState.interface';
+import { FeedStateInterface } from 'src/app/shared/modules/feed/types/feedState.interface';
 
-const initialState: IFeedState = {
+const initialState: FeedStateInterface = {
   isLoading: false,
   error: null,
   data: null,
@@ -17,14 +17,14 @@ const feedReducer = createReducer(
   initialState,
   on(
     getFeedAction,
-    (state): IFeedState => ({
+    (state): FeedStateInterface => ({
       ...state,
       isLoading: true,
     })
   ),
   on(
     getFeedSuccessAction,
-    (state, action): IFeedState => ({
+    (state, action): FeedStateInterface => ({
       ...state,
       isLoading: false,
       data: action.feed,
@@ -32,14 +32,14 @@ const feedReducer = createReducer(
   ),
   on(
     getFeedFailureAction,
-    (state): IFeedState => ({
+    (state): FeedStateInterface => ({
       ...state,
       isLoading: false,
     })
   ),
-  on(routerNavigatedAction, (): IFeedState => initialState)
+  on(routerNavigatedAction, (): FeedStateInterface => initialState)
 );
 
-export function reducers(state: IFeedState, action: Action) {
+export function reducers(state: FeedStateInterface, action: Action) {
   return feedReducer(state, action);
 }
