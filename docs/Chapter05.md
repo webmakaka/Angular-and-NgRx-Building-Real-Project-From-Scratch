@@ -30,6 +30,20 @@
 
 <br/>
 
+### 034 Создаем другие фиды
+
+Нужно залогиниться в готовом приложении и подписаться на кого-то, чтобы в yourfeed что-то было.
+
+<br/>
+
+![Application](/img/pic-m05-p04.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-m05-p05.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
