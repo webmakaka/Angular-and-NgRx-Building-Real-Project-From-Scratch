@@ -1,5 +1,5 @@
-<mc-loading *nfIf="isLoading$ | async"> </mc-loading>
-<mc-error-message *nfIf="error$ | async"> </mc-error-message>
+<mc-loading *ngIf="isLoading$ | async"> </mc-loading>
+<mc-error-message *ngIf="error$ | async"> </mc-error-message>
 
 <div class="sidebar" *ngIf="popularTags$ | async">
   <p>Popular Tags</p>

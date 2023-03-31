@@ -18,7 +18,15 @@
 
 <br/>
 
-![Application](/img/pic-m05-p01.png?raw=true)
+![Application](/img/pic-m05-p02.png?raw=true)
+
+<br/>
+
+### 033 Добавляем переключатель между фидами
+
+<br/>
+
+![Application](/img/pic-m05-p03.png?raw=true)
 
 <br/>
 
