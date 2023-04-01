@@ -83,6 +83,8 @@ Package                      Version
 
 ### [05 Дополнительные модули](./docs/Chapter05.md)
 
+### [06 Модули работы с отдельным постом](./docs/Chapter06.md)
+
 <br/>
 <hr/>
 <br/>
