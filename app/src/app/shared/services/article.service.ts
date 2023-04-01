@@ -9,7 +9,7 @@ import { GetArticleResponseInterface } from 'src/app/shared/types/getArticleResp
 export class ArticleService {
   constructor(private http: HttpClient) {}
   getArticle(slug: string): Observable<ArticleInterface> {
-    const fullUrl = `${constants.apiUrl}/article/${slug}`;
+    const fullUrl = constants.apiUrl + `/articles/${slug}`;
     return this.http.get<GetArticleResponseInterface>(fullUrl).pipe(
       map((response: GetArticleResponseInterface) => {
         return response.article;
