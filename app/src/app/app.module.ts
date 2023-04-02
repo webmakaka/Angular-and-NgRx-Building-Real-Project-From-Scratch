@@ -10,6 +10,7 @@ import { AppComponent } from 'src/app/app.component';
 import { ArticleModule } from 'src/app/article/article.module';
 import { AuthModule } from 'src/app/auth/auth.module';
 import { CreateArticleModule } from 'src/app/createArticle/createArticle.module';
+import { EditArticleModule } from 'src/app/editArticle/editArticle.module';
 import { GlobalFeedModule } from 'src/app/globalFeed/globalFeed.module';
 import { TopBarModule } from 'src/app/shared/modules/topBar/topBar.module';
 import { AuthInterceptor } from 'src/app/shared/services/authinterceptor.service';
@@ -34,6 +35,7 @@ import { YourFeedModule } from 'src/app/yourFeed/yourFeed.module';
     TagFeedModule,
     CreateArticleModule,
     ArticleModule,
+    EditArticleModule,
   ],
   providers: [
     PersistanceService,
