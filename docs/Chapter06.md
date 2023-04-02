@@ -34,6 +34,18 @@
 
 <br/>
 
+![Application](/img/pic-m06-p03.png?raw=true)
+
+<br/>
+
+### 040 Добавляем стор для страницы создания нового поста
+
+<br/>
+
+![Application](/img/pic-m06-p04.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

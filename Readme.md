@@ -12,7 +12,7 @@
 <br/>
 
 ```
-$ volta install node npm yarn
+$ volta install node@18 npm@9
 ```
 
 <br/>
@@ -26,7 +26,7 @@ v18.15.0
 
 ```
 $ npm -v
-9.6.2
+9.6.3
 ```
 
 <br/>
