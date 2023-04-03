@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 import { GetCurrentUserEffect } from 'src/app/auth/store/effects/getCurrentUser.effect';
 import { LoginEffect } from 'src/app/auth/store/effects/login.effect';
 import { RegisterEffect } from 'src/app/auth/store/effects/register.effect';
+import { UpdateCurrentUserEffect } from 'src/app/auth/store/effects/updateCurrentUser.effect';
 import { reducers } from 'src/app/auth/store/reducers';
 import { BackendErrorMessagesModule } from 'src/app/shared/modules/backendErrorMessages/backendErrorMessages.module';
 import { PersistanceService } from 'src/app/shared/services/persistance.service';
@@ -35,6 +36,7 @@ const routes: Routes = [
       RegisterEffect,
       LoginEffect,
       GetCurrentUserEffect,
+      UpdateCurrentUserEffect,
     ]),
     BackendErrorMessagesModule,
   ],
