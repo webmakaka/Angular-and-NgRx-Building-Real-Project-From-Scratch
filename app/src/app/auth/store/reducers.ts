@@ -14,6 +14,7 @@ import {
   registerFailureAction,
   registerSuccessAction,
 } from 'src/app/auth/store/actions/register.action';
+import { logoutAction } from 'src/app/auth/store/actions/sync.action';
 import { updateCurrentUserSuccessAction } from 'src/app/auth/store/actions/updateCurrentUser.action';
 import { AuthStateInterface } from 'src/app/auth/types/authState.interface';
 
@@ -107,6 +108,13 @@ const authReducer = createReducer(
     (state, action): AuthStateInterface => ({
       ...state,
       currentUser: action.currentUser,
+    })
+  ),
+  on(
+    logoutAction,
+    (): AuthStateInterface => ({
+      ...initiaState,
+      isLoggedIn: false,
     })
   )
 );
