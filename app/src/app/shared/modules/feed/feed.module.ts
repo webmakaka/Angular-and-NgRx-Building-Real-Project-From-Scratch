@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { AddToFavoritesModule } from 'src/app/shared/modules/addToFavorites/addToFavorites.module';
 import { ErrorMessageModule } from 'src/app/shared/modules/errorMessage/errorMessage.module';
 import { FeedComponent } from 'src/app/shared/modules/feed/components/feed/feed.component';
 import { FeedService } from 'src/app/shared/modules/feed/services/feed.service';
@@ -22,6 +23,7 @@ import { TagListModule } from 'src/app/shared/modules/tagList/tagList.module';
     LoadingModule,
     PaginationModule,
     TagListModule,
+    AddToFavoritesModule,
   ],
   declarations: [FeedComponent],
   exports: [FeedComponent],
