@@ -6,13 +6,13 @@ import {
 } from 'src/app/auth/store/actions/updateCurrentUser.action';
 import { SettingsStateInterface } from 'src/app/settings/types/settingsState.interface';
 
-const initiaState: SettingsStateInterface = {
+const initialState: SettingsStateInterface = {
   isSubmitting: false,
   validationErrors: null,
 };
 
 const settingsReducer = createReducer(
-  initiaState,
+  initialState,
   on(
     updateCurrentUserAction,
     (state): SettingsStateInterface => ({

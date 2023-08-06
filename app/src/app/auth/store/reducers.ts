@@ -18,7 +18,7 @@ import { logoutAction } from 'src/app/auth/store/actions/sync.action';
 import { updateCurrentUserSuccessAction } from 'src/app/auth/store/actions/updateCurrentUser.action';
 import { AuthStateInterface } from 'src/app/auth/types/authState.interface';
 
-const initiaState: AuthStateInterface = {
+const initialState: AuthStateInterface = {
   isSubmitting: false,
   isLoading: false,
   currentUser: null,
@@ -27,7 +27,7 @@ const initiaState: AuthStateInterface = {
 };
 
 const authReducer = createReducer(
-  initiaState,
+  initialState,
   on(
     registerAction,
     (state): AuthStateInterface => ({
@@ -113,7 +113,7 @@ const authReducer = createReducer(
   on(
     logoutAction,
     (): AuthStateInterface => ({
-      ...initiaState,
+      ...initialState,
       isLoggedIn: false,
     })
   )
